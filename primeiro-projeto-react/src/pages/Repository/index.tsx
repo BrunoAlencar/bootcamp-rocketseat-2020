@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+// useState is used to set and get a variable working with it's state
+// useEffect is used to control side effects of variables
 import { useRouteMatch, Link } from 'react-router-dom';
 
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
