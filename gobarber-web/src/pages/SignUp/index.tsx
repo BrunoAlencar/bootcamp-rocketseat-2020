@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiArrowLeft, FiLogIn, FiMail, FiLock, FiUser } from 'react-icons/fi';
+import { FiArrowLeft, FiMail, FiLock, FiUser } from 'react-icons/fi';
 import { Form } from '@unform/web';
 
 import logoImg from '../../assets/logo.svg';
@@ -21,7 +21,7 @@ const SignUp: React.FC = () => {
       <Content>
         <img src={logoImg} alt="GoBarber" />
 
-        <Form onSubmit={handleSubmit}>
+        <Form initialData={{ name: 'bruno', email: 'bruno.ale@mail.com', password: '123123ß' }} onSubmit={handleSubmit}>
           <h1>Faça seu cadastro</h1>
           <Input name="name" Icon={FiUser} placeholder="Nome" />
 
