@@ -21,7 +21,14 @@ const SignUp: React.FC = () => {
       <Content>
         <img src={logoImg} alt="GoBarber" />
 
-        <Form initialData={{ name: 'bruno', email: 'bruno.ale@mail.com', password: '123123ß' }} onSubmit={handleSubmit}>
+        <Form
+          // initialData={{
+          //   name: 'bruno',
+          //   email: 'bruno.ale@mail.com',
+          //   password: '123123ß',
+          // }}
+          onSubmit={handleSubmit}
+        >
           <h1>Faça seu cadastro</h1>
           <Input name="name" Icon={FiUser} placeholder="Nome" />
 
